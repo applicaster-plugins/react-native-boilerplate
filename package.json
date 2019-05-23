@@ -11,6 +11,7 @@
     "test": "jest",
     "jest": "jest",
     "lint": "eslint .",
+    "format": "prettier --config ./.prettierrc --write *.js",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "build": "npm run build:ios && bpm run build:android",
     "build:ios": "react-native bundle --platform ios --dev false --entry-file index.ios.js --bundle-output tmp/build/ios/index.ios.bundle.js",
@@ -54,14 +55,16 @@
     "babel-register": "^6.18.0",
     "eslint": "^4.11.0",
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-babel": "^4.0.0",
     "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-react-native": "^2.3.2",
+    "husky": "^2.3.0",
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
+    "prettier": "^1.17.1",
     "react": "^16.0.0",
     "react-native": "^0.50.4",
     "react-native-zapp-bridge": "latest",
@@ -75,5 +78,11 @@
   "jest": {
     "verbose": true,
     "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && npm run lint",
+      "pre-push": "npm test && npm run lint && npm run format"
+    }
   }
 }
