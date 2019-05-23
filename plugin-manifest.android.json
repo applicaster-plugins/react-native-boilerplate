@@ -1,0 +1,27 @@
+{
+  "api": {
+    "require_startup_execution": false,
+    "class_name": "com.applicaster.reactnative.plugins.APReactNativeAdapter",
+    "react_packages": []
+  },
+  "dependency_repository_url": [],
+  "platform": "android",
+  "author_name": "applicaster",
+  "author_email": "support@applicaster.com",
+  "manifest_version": "0.1.0",
+  "name": "react-native-boilerplate",
+  "description": "Description of you plugin",
+  "type": "general",
+  "identifier": "react-native-boilerplate",
+  "whitelisted_account_ids": [],
+  "min_zapp_sdk": "7.0.0",
+  "deprecated_since_zapp_sdk": "",
+  "unsupported_since_zapp_sdk": "",
+  "ui_builder_support": true,
+  "screen": true,
+  "react_native": true,
+  "react_bundle_url": "https://assets-production.applicaster.com/zapp/react-native-bundles/react-native-boilerplate/0_50_4/0.1.0/android/index.android.bundle.js",
+  "extra_dependencies": [],
+  "npm_dependencies": [],
+  "project_dependencies": []
+}
