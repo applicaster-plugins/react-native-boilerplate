@@ -24,6 +24,9 @@
     "jest": true
   },
   "settings": {
+    "react": {
+      "version": "detect"
+    },
     "import/resolver": {
       "node": {
         "extensions": [".js", ".android.js", ".ios.js"]
