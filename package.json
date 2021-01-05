@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/applicaster/react-native-boilerplate#readme",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "moment": "^2.20.1",
     "prop-types": "^15.7.2",
     "ramda": "^0.25.0",
